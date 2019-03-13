@@ -81,10 +81,34 @@
                 <td> number:'.2-2' </td>
                 <td> {{ salario | number:'.2-2' }} </td>
             </tr>
+            <tr>
+                <th> {{ valorDePromesa }}</th>
+                <td> async nothing </td>
+                <td> {{ valorDePromesa }} </td>
+            </tr>
+            <tr>
+                <th> {{ valorDePromesa }}</th>
+                <td> async nothing json</td>
+                <td> {{ valorDePromesa | json }} </td>
+            </tr>
+            <tr>
+                <th> {{ valorDePromesa }}</th>
+                <td> async </td>
+                <td> {{ valorDePromesa | async }} </td>
+            </tr>
         </tbody>
     </table>
     <h4>Slice</h4>
     <ul>
         <li *ngFor="let item of arreglo | slice:5:20"> {{ item }} </li>
     </ul>
+    <h4>JSON normal</h4>
+    {{ heroe }}
+    <h4>JSON json</h4>
+    {{ heroe | json}}
+    <h4>JSON json pre</h4>
+    <pre>{{ heroe | json}}</pre>
 </div>
+<br>
+<br>
+<br>
