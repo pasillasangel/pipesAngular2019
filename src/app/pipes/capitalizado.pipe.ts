@@ -11,7 +11,7 @@ export class CapitalizadoPipe implements PipeTransform {
         // }
         // console.log('nombres: ' + nombres);
         // return nombres.join(' ');
-        return 'hola mundo';
+        return 'Capitalizado';
     }
 }
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { reject } from 'q';
+import { toUnicode } from 'punycode';
 
 @Component({
   selector: 'app-root',
@@ -22,9 +23,11 @@ export class AppComponent {
       casa: '19'
     }
   };
-  valorDePromesa = new Promise( ( resolve, reject ) => {
+  valorDePromesa = new Promise( ( resolve,  ) => {
     setTimeout( () => ('Llego la data!'), 3500);
   });
   fecha = new Date();
+  video = '1FDyZq-R-Jc';
+  activar = true;
 }
 
